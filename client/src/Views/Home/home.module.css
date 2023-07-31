@@ -1,0 +1,33 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples filas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: flex-start; /* Alinea las tarjetas en la parte superior del contenedor */
+    margin: 2rem;
+  }
+
+  .tarjet{
+    margin: auto;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(5, minmax(190px, 1fr));
+  justify-content: space-around;
+  grid-gap: 70px;
+  margin: 20px;
+  
+}
+
+.errorMessage {
+  color: red;
+  background-color: #e0fbfc;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.parrafo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+}

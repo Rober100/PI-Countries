@@ -1,0 +1,11 @@
+
+.select{
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 25px 0 25px;
+    background-color: #293241 ;
+    color: antiquewhite;
+    padding: 3px;
+}

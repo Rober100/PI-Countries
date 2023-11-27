@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import style from "../Nav/nav.module.css";
+import "../Nav/nav.module.css";
 import { useDispatch } from "react-redux";
 import * as actions from "../../Redux/actions";
 import image from "../../assets/planet.svg";
@@ -28,7 +28,9 @@ const Nav = () => {
         <a className="navbar-brand" href="/home">
           <img src={image} alt="Bootstrap" width="50" height="40" />
         </a>
-        <a className="navbar-brand text-light fw-bold">Henry Countries</a>
+        <a className="navbar-brand text-light fw-bold" onClick={handlerClick}>
+          Henry Countries
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -43,23 +45,23 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active text-light"
                 aria-current="page"
-                href="/home"
+                to="/home"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="/form">
+              <Link to="/form" className="nav-link text-light">
                 Create Activity
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="/About">
+              <Link className="nav-link text-light" to="/About">
                 About me
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="d-flex ms-auto">

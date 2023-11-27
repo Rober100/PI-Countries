@@ -5,9 +5,6 @@ import { useDispatch } from "react-redux";
 import * as actions from "../../Redux/actions";
 import image from "../../assets/planet.svg";
 
-const url =
-  "https://cdn-icons-png.flaticon.com/512/45/45069.png?w=740&t=st=1688998939~exp=1688999539~hmac=7a38f22e779375c8cb60ffd2ca1bef100f9bff53b4f7303b4844c2955a68c3ca";
-
 const Nav = () => {
   const dispatch = useDispatch();
   useEffect(() => {

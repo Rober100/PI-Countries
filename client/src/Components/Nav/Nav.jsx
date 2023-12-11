@@ -22,10 +22,10 @@ const Nav = () => {
       style={{ backgroundColor: "#3498db" }}
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="/home">
+        <Link className="navbar-brand" to="/home">
           <img src={image} alt="Bootstrap" width="50" height="40" />
-        </a>
-        <a className="navbar-brand text-light fw-bold" onClick={handlerClick}>
+        </Link>
+        <a className="navbar-brand text-light fw-bold">
           Henry Countries
         </a>
         <button
